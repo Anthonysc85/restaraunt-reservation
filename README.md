@@ -375,7 +375,7 @@ so that I can quickly access a customer's reservation when they call about their
 
 As a restaurant manager<br/>
 I want to be able to modify a reservation if a customer calls to change or cancel their reservation<br/>
-so that reservations are accurate and current.
+so that reservations are accurate and current
 
 #### Acceptance Criteria
 
