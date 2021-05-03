@@ -3,7 +3,7 @@
  *
  * You will not need to make changes to this file.
  */
-require("dotenv").config();
+ require('dotenv').config() // ADD THIS IN EVEN THOUGH DIRECTIONS SAY NO TOUCHY
 const path = require("path");
 
 const {

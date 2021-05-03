@@ -1,7 +1,7 @@
 {
-  "name": "restaurant-reservation",
+  "name": "starter-restaurant-reservation",
   "version": "1.0.0",
-  "description": "Restaurant Reservation System",
+  "description": "Starter project restaurant reservation system",
   "private": true,
   "repository": {
     "type": "git",
@@ -47,5 +47,8 @@
   },
   "keywords": [],
   "author": "Thinkful, Inc.",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "knex": "^0.95.4"
+      }
 }

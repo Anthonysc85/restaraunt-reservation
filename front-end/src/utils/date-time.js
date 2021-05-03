@@ -57,7 +57,7 @@ export function today() {
  *  the date one day prior to currentDate, formatted as YYYY-MM-DD
  */
 export function previous(currentDate) {
-  let [year, month, day] = currentDate.split("-");
+  let [ year, month, day ] = currentDate.split("-");
   month -= 1;
   const date = new Date(year, month, day);
   date.setMonth(date.getMonth());
@@ -73,33 +73,10 @@ export function previous(currentDate) {
  *  the date one day after currentDate, formatted as YYYY-MM-DD
  */
 export function next(currentDate) {
-  let [year, month, day] = currentDate.split("-");
+  let [ year, month, day ] = currentDate.split("-");
   month -= 1;
   const date = new Date(year, month, day);
   date.setMonth(date.getMonth());
   date.setDate(date.getDate() + 1);
   return asDateString(date);
-}
-
-export function readableDate(dateString) {
-  const months = {
-    1: "January",
-    2: "February",
-    3: "March",
-    4: "April",
-    5: "May",
-    6: "June",
-    7: "July",
-    8: "August",
-    9: "September",
-    10: "October",
-    11: "November",
-    12: "December",
-  };
-
-  const month = months[Number(dateString.slice(5, 7))];
-  const day = Number(dateString.slice(8, 10));
-  const year = Number(dateString.slice(0, 4));
-
-  return `${month} ${day}, ${year}`;
 }
